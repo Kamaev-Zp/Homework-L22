@@ -1,16 +1,18 @@
-package L17.People.Transport;
+package L17.In.Transport;
 
-public class Car {
+public class Bus {
+
         public String model;
         public int age;
 
 
-        public Car (String name, int age){
+        public Bus (String name, int age){
             this.model = name;
             this.age = age;
         }
     public String toString(){
-        return model + age;}
+        return model + age;
+    }
     }
 
 

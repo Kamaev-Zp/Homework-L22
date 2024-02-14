@@ -1,11 +1,11 @@
-package L17.People.Anamial;
+package L17.In.people;
 
-public class Cow {
+public class Woman {
         public String name;
         public int age;
 
 
-        public Cow (String name, int age){
+        public Woman (String name, int age){
             this.name = name;
             this.age = age;
         }

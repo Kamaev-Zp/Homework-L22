@@ -1,4 +1,4 @@
-package L17.People.Transport;
+package L17.In.Transport;
 
 public class Bike {
         public String model;
