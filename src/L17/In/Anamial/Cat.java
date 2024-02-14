@@ -1,8 +1,6 @@
 package L17.In.Anamial;
 
 
-import L17.Animal;
-
 public class Cat extends Animal {
     String сolor;
     String breed;

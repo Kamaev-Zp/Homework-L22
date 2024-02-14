@@ -1,18 +1,20 @@
 package L17.In.people;
 
-public class Woman {
-        public String name;
-        public int age;
 
+    public class Woman extends People {
+        String status;
+        String child;
 
-        public Woman (String name, int age){
-            this.name = name;
-            this.age = age;
+        public Woman(int age, String name, String status, String child) {
+            super(age, name);
+            this.status = status;
+            this.child = child;
         }
-    public String toString(){
-        return name + age;
-    }
-    }
 
+        public String toString() {
+            return super.toString() + "\n" + " Статус : " + this.status + "\n"
+                    + " Дети : " + this.child + "\n";
+        }
+    }
 
 

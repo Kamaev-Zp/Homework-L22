@@ -1,4 +1,4 @@
-package L17;
+package L17.In.Anamial;
 
 public class Animal {
 

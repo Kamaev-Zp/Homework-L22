@@ -1,45 +1,44 @@
-import L17.People.people.*;
-import L17.People.Anamial.*;
-import L17.People.Transport.*;
+import L17.In.Anamial.*;
+import L17.In.Transport.Bike;
+import L17.In.Transport.Bus;
+import L17.In.Transport.Car;
+import L17.In.Transport.Transport;
+import L17.In.people.Man;
+import L17.In.people.People;
+import L17.In.people.Woman;
+
 public class L17Main {
-    public static void main(String[] args) {
-//
-//
+  public static void main(String[] args) {
+
+    System.out.println("=====================================================");
+    System.out.println(" Люди : ");
 //        People
-
-        Man grisha = new Man("Grisha", 35);
-        System.out.println(grisha);
-
-        Woman lida = new Woman("Lida", 33);
-        System.out.println(lida);
-
-
-//        Animal
 //
-//
-        Cat vasya = new Cat("Vasya",2);
-        System.out.println(vasya);
-
-        Cow mumu = new Cow("Mumu", 3);
-        System.out.println(mumu);
-
-        Dog baron = new Dog("Baron", 7);
-        System.out.println(baron);
+    People karl = new Man(25, "Карл", "не женат", "0");
+    System.out.println("Мужчина" + "\n" + karl);
+    People maria = new Woman(27, "Maрия", "замужем", "2");
+    System.out.println("Женщина" + "\n" + maria);
 
 
+    // Animals
+    System.out.println("=====================================================");
+    System.out.println(" Животные :");
+
+    Animal baron = new Dog(4, "Барон", "Черный", "Роттвелер");
+    System.out.println("Собака :" + "\n" + baron);
+    Animal Mumu = new Cow(2, "Му-Му", "Белая", "-");
+    System.out.println("Корова :" + "\n" + Mumu);
+    Animal Murzik = new Cat(6, "Мурзик", "Серый", "Британец");
+    System.out.println("Кот :" + "\n" + Murzik);
 
 //        Transport
-
-        Bike herlyDavidson = new Bike("herlyDavidson", 1999);
-        System.out.println(herlyDavidson);
-
-        Bus marsedes = new Bus("Marsedes" , 2010);
-        System.out.println(marsedes);
-
-        Car bmw = new Car("BWB", 2019);
-        System.out.println(bmw);
-
-    }
+    System.out.println("=====================================================");
+    System.out.println(" Транспорт :");
+    Transport harleyDevidson = new Bike(1988, "HarleyDevidson", "1250");
+    System.out.println("Байк :" + "\n" + harleyDevidson);
+    Transport bmw = new Car(2016, "BMW", "X6");
+    System.out.println("Машина :" + "\n" + bmw);
+    Transport Marcedes = new Bus(2015, "Marcedes", "Sprinter");
+    System.out.println("Автобус :" + "\n" + Marcedes);
+  }
 }
-
-

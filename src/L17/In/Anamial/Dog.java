@@ -1,7 +1,5 @@
 package L17.In.Anamial;
 
-import L17.Animal;
-
 public class Dog extends Animal {
     String сolor;
     String breed;

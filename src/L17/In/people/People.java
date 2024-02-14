@@ -1,4 +1,4 @@
-package L17;
+package L17.In.people;
 
 public class People {
     String name;

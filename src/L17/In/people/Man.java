@@ -1,8 +1,7 @@
 package L17.In.people;
-import L17.People;
 
 
-    public class Man extends People {
+public class Man extends People {
         String status;
         String child;
 
@@ -14,8 +13,8 @@ import L17.People;
 
         public String toString()
         {
-            return super.toString() + "\n" + " Порода : " + this.status + "\n"
-                    + " Цвет : " + this.child + "\n";
+            return super.toString() + "\n" + " Статус : " + this.status + "\n"
+                    + " Дети : " + this.child + "\n";
         }
 
     }
