@@ -1,8 +1,8 @@
-import L17.In.Anamial.*;
-import L17.In.Transport.Bike;
-import L17.In.Transport.Bus;
-import L17.In.Transport.Car;
-import L17.In.Transport.Transport;
+import L17.In.animals.*;
+import L17.In.transport.Bike;
+import L17.In.transport.Bus;
+import L17.In.transport.Car;
+import L17.In.transport.Transport;
 import L17.In.people.Man;
 import L17.In.people.People;
 import L17.In.people.Woman;

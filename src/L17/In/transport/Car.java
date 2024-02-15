@@ -1,6 +1,4 @@
-package L17.In.Transport;
-
-import L17.In.people.People;
+package L17.In.transport;
 
 public class Car extends Transport {
     String model;

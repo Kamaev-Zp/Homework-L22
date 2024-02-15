@@ -1,4 +1,4 @@
-package L17.In.Anamial;
+package L17.In.animals;
 
 
 public class Cow extends Animal {

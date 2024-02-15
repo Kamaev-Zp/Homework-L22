@@ -1,10 +1,9 @@
-package L17.In.Transport;
+package L17.In.transport;
 
-
-public class Bus extends Transport {
+public class Bike extends Transport {
     String model;
 
-    public Bus (int age, String marka,  String model){
+    public Bike (int age, String marka,  String model){
         super(age, marka);
         this.model = model;
     }
@@ -16,5 +15,3 @@ public class Bus extends Transport {
     }
 
 }
-
-
