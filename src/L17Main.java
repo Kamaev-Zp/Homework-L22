@@ -15,9 +15,13 @@ public class L17Main {
 //        People
 //
     People karl = new Man(25, "Карл", "не женат", "0");
+    karl.voice();
     System.out.println("Мужчина" + "\n" + karl);
-    People maria = new Woman(27, "Maрия", "замужем", "2");
+
+    People maria = new Woman(27, "Maрия", " не замужем", "2");
+    maria.voice();
     System.out.println("Женщина" + "\n" + maria);
+
 
 
     // Animals
@@ -25,20 +29,31 @@ public class L17Main {
     System.out.println(" Животные :");
 
     Animal baron = new Dog(4, "Барон", "Черный", "Роттвелер");
+    baron.voiceAnimal();
     System.out.println("Собака :" + "\n" + baron);
-    Animal Mumu = new Cow(2, "Му-Му", "Белая", "-");
-    System.out.println("Корова :" + "\n" + Mumu);
-    Animal Murzik = new Cat(6, "Мурзик", "Серый", "Британец");
-    System.out.println("Кот :" + "\n" + Murzik);
+
+    Animal mumu = new Cow(2, "Му-Му", "Белая", "-");
+    mumu.voiceAnimal();
+    System.out.println("Корова :" + "\n" + mumu);
+
+    Animal murzik = new Cat(6, "Мурзик", "Серый", "Британец");
+    murzik.voiceAnimal();
+    System.out.println("Кот :" + "\n" + murzik);
 
 //        Transport
     System.out.println("=====================================================");
     System.out.println(" Транспорт :");
+
     Transport harleyDevidson = new Bike(1988, "HarleyDevidson", "1250");
+    harleyDevidson.soundTransport();
     System.out.println("Байк :" + "\n" + harleyDevidson);
+
     Transport bmw = new Car(2016, "BMW", "X6");
+    bmw.soundTransport();
     System.out.println("Машина :" + "\n" + bmw);
-    Transport Marcedes = new Bus(2015, "Marcedes", "Sprinter");
-    System.out.println("Автобус :" + "\n" + Marcedes);
+
+    Transport marcedes = new Bus(2015, "Marcedes", "Sprinter");
+    marcedes.soundTransport();
+    System.out.println("Автобус :" + "\n" + marcedes);
   }
 }

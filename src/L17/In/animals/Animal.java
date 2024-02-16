@@ -2,12 +2,16 @@ package L17.In.animals;
 
 public class Animal {
 
-    String name;
-    int age;
+    protected String name;
+    protected int age;
 
     public Animal(int age, String name){
         this.name = name;
         this.age = age;
+    }
+
+    public void voiceAnimal (){
+        System.out.println(" Животное издает звук : ");
     }
     public String toString()
     {
