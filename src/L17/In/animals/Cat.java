@@ -14,6 +14,9 @@ public class Cat extends Animal {
         super.voiceAnimal();
         System.out.println(" Мяу-Мяу ");
     }
+     public void Attack (){
+        System.out.println("Nakonec");
+    }
 
     public String toString()
     {

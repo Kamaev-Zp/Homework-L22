@@ -36,9 +36,15 @@ public class L17Main {
     mumu.voiceAnimal();
     System.out.println("Корова :" + "\n" + mumu);
 
+    
+//      Восходящее преобразование (upcasting)
     Animal murzik = new Cat(6, "Мурзик", "Серый", "Британец");
     murzik.voiceAnimal();
     System.out.println("Кот :" + "\n" + murzik);
+//      Нисходящее преобразование (downcasting)
+   Cat cat =(Cat) murzik;
+   cat.Attack();
+   System.out.println("URaaaaaaaaaaaaaaaaaaaaaaaa");
 
 //        Transport
     System.out.println("=====================================================");
