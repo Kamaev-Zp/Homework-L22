@@ -4,14 +4,22 @@ import L17.In.animals.Animal;
 
 import java.util.Objects;
 
-public class People {
+public abstract class People implements Drawable {
     protected String name;
     protected int age;
 
-    public People(int age, String name){
+    public People(int age, String name) {
         this.name = name;
         this.age = age;
     }
+
+    @Override
+    public void print() {
+//        System.out.println("Имя: " + name);
+        System.out.println("Возраст: " + age);
+    }
+
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -19,14 +27,17 @@ public class People {
         if (obj == null || getClass() != obj.getClass())
             return false;
         People people = (People) obj;
-        return age == people.age && Objects.equals(name,people.name);
+        return age == people.age && Objects.equals(name, people.name);
     }
-    public void voice (){
-        System.out.println(" Активный поиск :");
-    }
-    public String toString()
-    {
-        return  " Имя : " + name + "\n" + " Возраст : " + age;
+
+    @Override
+    public void draw() {
+        System.out.println("Активный поиск :");
     }
 }
-
+//    public String  toString()
+//    {
+//        return  " Имя : " + name + "\n" + " Возраст : " + age;
+//    }
+//}
+//

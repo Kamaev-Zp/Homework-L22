@@ -7,9 +7,16 @@ public class Car extends Transport {
         super(age, marka);
         this.model = model;
     }
-    public void soundTransport (){
-        super.soundTransport();
-        System.out.println(" Конечно! Держи брат! ");
+    @Override
+    public void draw(){
+        super.draw();
+        System.out.println( "Модель: " + this.model);
+
+    }
+    @Override
+    public void print (){
+        super.print();
+        System.out.println("Конечно! Держи брат! ");
     }
     public String toString()
     {

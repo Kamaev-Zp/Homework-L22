@@ -1,7 +1,7 @@
 package L17.In.people;
 
 
-public class Man extends People {
+public class Man extends People implements Drawable {
     protected String status;
     protected String child;
 
@@ -11,19 +11,32 @@ public class Man extends People {
         this.child = child;
 
     }
-
-    public void voice() {
-        super.voice();
-        System.out.println(" Ищю женщину желательно без денег ");}
-
-
-        public String toString ()
-        {
-            return super.toString() + "\n" + " Статус : " + this.status + "\n"
-                    + " Дети : " + this.child + "\n";
-        }
-
+    public String getName() {
+        return this.name;
     }
+    @Override
+    public void draw() {
+        super.draw();
+        System.out.println("Мужчина");
+        System.out.println("Ищю женщину желательно без денег ");
+    }
+
+    @Override
+    public void print() {
+        super.print(); // Выводим имя и возраст из родительского класса
+        System.out.println( "Статус: " + this.status);
+        System.out.println("Дети: " + this.child);
+    }
+}
+
+
+//        public String toString ()
+//        {
+//            return super.toString() + "\n" + " Статус : " + this.status + "\n"
+//                    + " Дети : " + this.child + "\n";
+//        }
+//
+//    }
 
 
 

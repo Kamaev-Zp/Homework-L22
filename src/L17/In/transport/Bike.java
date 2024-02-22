@@ -1,21 +1,29 @@
 package L17.In.transport;
 
-public class Bike extends Transport {
+public class Bike extends Transport implements Drawable {
     protected String model;
 
     public Bike (int age, String marka,  String model){
         super(age, marka);
         this.model = model;
     }
-    public void soundTransport (){
-        super.soundTransport();
-        System.out.println(" Я мотоцикл откуда у меня AUX ");
+
+    @Override
+    public void draw() {
+      super.draw();
+        System.out.println( "Модель: " + this.model);
+
+    }
+    @Override
+    public void print (){
+        super.print();
+        System.out.println("Я мотоцикл откуда у меня AUX ");
     }
 
-    public String toString()
-    {
-        return super.toString() +  "\n"
-                + " Модель : " + this.model + "\n";
-    }
+//    public String toString()
+//    {
+//        return super.toString() +  "\n"
+//                + " Модель : " + this.model + "\n";
+//    }
 
 }
